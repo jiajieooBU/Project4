@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Job Market Analysis 2024"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: introduction.qmd
+        text: "Introduction"
+      - href: data_cleaning.ipynb
+        text: "Data Cleaning & Exploration"
+      - href: eda.ipynb
+        text: "Exploratory Data Analysis"
+      - href: skill_gap_analysis.ipynb
+        text: "Skill Gap Analysis"
+      - href: analytics.ipynb
+        text: "Analytics"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+execute:
+  echo: true
+  eval: true
+  code-fold: true
